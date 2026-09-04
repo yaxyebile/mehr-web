@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #06150d;
+  --foreground: #f8fafc;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Glassmorphism Cards */
+.glass-panel {
+  background: rgba(15, 81, 50, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(15, 81, 50, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(15, 81, 50, 0.08);
+}
+
+.gold-glow {
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35);
+}
+
+.emerald-glow {
+  box-shadow: 0 0 25px rgba(32, 201, 151, 0.35);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #06150d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #146c43;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Gradient Text */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #FEE140 0%, #D4AF37 50%, #996515 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-text-gradient {
+  background: linear-gradient(135deg, #34d399 0%, #20c997 50%, #0F5132 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
